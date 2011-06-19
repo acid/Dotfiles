@@ -1,0 +1,4 @@
+"colorscheme relaxedgreen
+colorscheme solarized
+set guifont=Inconsolata:h15
+set transp=23

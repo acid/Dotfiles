@@ -1,0 +1,38 @@
+set nobackup
+set nowritebackup
+set noswapfile
+set history=42
+set showcmd
+set foldmethod=syntax
+set foldlevelstart=1
+
+" Display extra whitespace
+set list listchars=tab:»·,trail:·
+
+" Color scheme
+"colorscheme relaxedgreen
+colorscheme solarized
+"highlight NonText guibg=#060606
+"highlight Folded  guibg=#0A0A0A guifg=#9090D0
+
+" \ is the leader character
+let mapleader = "\\"
+
+" Hide search highlighting
+map <Leader>h :set invhls <CR>
+
+" ignore for Ctrl-T
+set wildignore+=vendor/plugins/*,public/*,tmp/*
+
+" fugitive shortcuts
+map <Leader>gs :Gstatus <CR>
+map <Leader>ga :Gadd . <CR>
+
+au BufRead,BufNewfile *.less set filetype=less
+
+" need more tabs!
+set tabpagemax=62
+
+" tweaks for surround
+let g:surround_45 = "<% \r %>"
+let g:surround_61 = "<%= \r %>"

@@ -1,0 +1,32 @@
+[user]
+  name =  Your Name
+  email = you@cool.domain
+[github]
+  user = your_user
+  token = ApiToken
+[alias]
+  a = commit --amend
+  ai = add --interactive
+  ad = add
+  br = branch
+  c = config
+  ca = commit -a -m
+  ci = commit
+  co = checkout
+  di = diff --word-diff
+  l = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
+  lg = log --oneline --decorate
+  push = !sh -c 'git push --tags && git push'
+  st = status -sb
+[color]
+  ui = true
+  diff = auto
+  status = auto
+  branch = auto
+[core]
+  excludesfile = ~/.gitignore
+  editor = mvim -f
+[apply]
+  whitespace = nowarn
+[format]
+  retty = %C(yellow)%h%Creset %s
