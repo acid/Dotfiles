@@ -51,5 +51,3 @@ function! <SID>StripTrailingWhitespaces()
 endfunction
 autocmd BufWritePre * :call <SID>StripTrailingWhitespaces()
 
-" open all files in a new tab
-:au BufAdd,BufNewFile,BufRead * nested tab sball
