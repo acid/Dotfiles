@@ -51,3 +51,6 @@ function! <SID>StripTrailingWhitespaces()
 endfunction
 autocmd BufWritePre * :call <SID>StripTrailingWhitespaces()
 
+" Use Node.js for JavaScript interpretation
+let $JS_CMD='node'
+
