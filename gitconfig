@@ -1,9 +1,6 @@
 [user]
-  name =  Your Name
-  email = you@cool.domain
-[github]
-  user = your_user
-  token = ApiToken
+  name =  Daniel Schweighoefer
+  email = daniel@netsteward.net
 [alias]
   a = commit --amend
   ai = add --interactive
