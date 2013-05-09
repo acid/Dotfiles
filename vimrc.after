@@ -5,6 +5,7 @@ set history=42
 set showcmd
 set foldmethod=syntax
 set foldlevelstart=1
+set background=dark
 
 " Display extra whitespace
 set list listchars=tab:»·,trail:·
