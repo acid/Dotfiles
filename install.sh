@@ -5,11 +5,12 @@ include FileUtils
 homedir = "/Users/#{ENV["USER"]}"
 path = File.dirname(File.expand_path(__FILE__)) + "/"
 
-local_confs = %w(gvimrc.local 
-		vimrc.local 
-		profile 
-		ackrc 
-		gitconfig)
+local_confs = %w(gvimrc.after
+		vimrc.after
+		profile
+		ackrc
+		gitconfig
+    janus)
 
 to_link = Hash.new
 local_confs.each do |f|
@@ -20,7 +21,7 @@ to_link["#{path}com.googlecode.iterm2.plist"] = "#{homedir}/Library/Preferences/
 to_link.each do |source,target|
   if File.symlink? target
     puts "#{source} already linked, nothing to do"
-  else 
+  else
     mv target, target + ".old" if File.exist? target
     ln_s source, target
   end
