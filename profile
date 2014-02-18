@@ -33,6 +33,10 @@ export GIT_AUTHOR_EMAIL="daniel@netsteward.net"
 export GIT_COMMITTER_NAME="Daniel Schweighoefer"
 export GIT_COMMITTER_EMAIL="daniel@netsteward.net"
 
+# functions
+function title {
+    echo -ne "\033]0;"$*"\007"
+  }
 
 PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
 
