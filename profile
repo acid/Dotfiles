@@ -6,7 +6,7 @@ PS1='\h:\W \u\$ '
 alias ll='ls -la'
 alias cat='lolcat'
 
-# ruby commands
+# ruby/rails commands
 alias rds='rake db:seed --trace'
 alias ss='script/server'
 alias sc='script/console'
@@ -32,6 +32,9 @@ export GIT_AUTHOR_NAME="Daniel Schweighoefer"
 export GIT_AUTHOR_EMAIL="daniel@netsteward.net"
 export GIT_COMMITTER_NAME="Daniel Schweighoefer"
 export GIT_COMMITTER_EMAIL="daniel@netsteward.net"
+
+# docker on mac
+export DOCKER_HOST=tcp://
 
 # functions
 function title {
