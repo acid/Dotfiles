@@ -10,3 +10,6 @@
 [submodule "janus/vim-yaml"]
 	path = janus/vim-yaml
 	url = https://github.com/stephpy/vim-yaml.git
+[submodule "bash-git-prompt"]
+	path = bash-git-prompt
+	url = https://github.com/magicmonty/bash-git-prompt.git
