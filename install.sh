@@ -10,6 +10,7 @@ local_confs = %w(gvimrc.after
 		profile
 		ackrc
 		gitconfig
+    bash-git-prompt
     janus)
 
 to_link = Hash.new
@@ -24,5 +25,6 @@ to_link.each do |source,target|
   else
     mv target, target + ".old" if File.exist? target
     ln_s source, target
+    puts "#{source} linked"
   end
 end
