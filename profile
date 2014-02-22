@@ -41,6 +41,16 @@ function title {
     echo -ne "\033]0;"$*"\007"
   }
 
+function tableflip {
+  echo ; echo " (╯°□°）╯︵$(echo "$1"|toilet -f term -F rotate)"; echo
+}
+
+function fuck {
+  if killall -9 "$2"; then
+    tableflip "$2"
+  fi
+}
+
 PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
 
 source ~/.bash-git-prompt/gitprompt.sh #add gitprompt
