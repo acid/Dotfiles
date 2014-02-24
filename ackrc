@@ -2,4 +2,4 @@
 --type-add=js=.coffee
 --type-set=mustache=.mustache
 --nosql
-
+--ignore-dir=log
