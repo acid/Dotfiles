@@ -54,3 +54,4 @@ function fuck {
 PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
 
 source ~/.bash-git-prompt/gitprompt.sh #add gitprompt
+FILE=~/.profile.local ; [ -f $FILE ] && . $FILE
