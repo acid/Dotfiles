@@ -3,7 +3,7 @@ export NODE_PATH=/usr/local/lib/node
 PS1='\h:\W \u\$ '
 
 # convinience
-alias ll='ls -la'
+alias ll='ls -lah'
 alias cat='lolcat'
 
 # ruby/rails commands
