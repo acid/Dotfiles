@@ -55,8 +55,14 @@ autocmd BufWritePre * :call <SID>StripTrailingWhitespaces()
 " Use Node.js for JavaScript interpretation
 let $JS_CMD='node'
 
+let g:ctrlp_max_files = 2300000
+
 " Don't screw up folds when inserting text that might affect them, until
 " leaving insert mode. Foldmethod is local to the window. Protect against
 " screwing up folding when switching between windows.
 "autocmd InsertEnter * if !exists('w:last_fdm') | let w:last_fdm=&foldmethod | setlocal foldmethod=manual | endif
 "autocmd InsertLeave,WinLeave * if exists('w:last_fdm') | let &l:foldmethod=w:last_fdm | unlet w:last_fdm | endif
+
+"ack tweaks
+call janus#add_mapping('ack', 'map', '<D-F>', ':Ack!<space>')
+let g:ack_autoclose = 1
