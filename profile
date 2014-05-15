@@ -53,6 +53,12 @@ function fuck {
   fi
 }
 
+function new_mac {
+  MAC_ADDRESS=`openssl rand -hex 6 | sed 's/\(..\)/\1:/g; s/.$//'`
+  echo "Setting MAC address..."
+  sudo ifconfig en0 ether $MAC_ADDRESS
+}
+
 PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
 
 source ~/.bash-git-prompt/gitprompt.sh #add gitprompt
