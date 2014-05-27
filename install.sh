@@ -11,7 +11,8 @@ local_confs = %w(gvimrc.after
 		ackrc
 		gitconfig
     bash-git-prompt
-    janus)
+    janus
+    gitignore)
 
 to_link = Hash.new
 local_confs.each do |f|
