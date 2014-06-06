@@ -40,8 +40,12 @@ export DOCKER_HOST=tcp://
 
 # functions
 function title {
-    echo -ne "\033]0;"$*"\007"
-  }
+  echo -ne "\033]0;"$*"\007"
+}
+
+function dtitle {
+  title ${PWD##*/}
+}
 
 function tableflip {
   echo ; echo " (╯°□°）╯︵$(echo "$1"|toilet -f term -F rotate)"; echo
