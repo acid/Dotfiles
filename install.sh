@@ -11,6 +11,7 @@ local_confs = %w(gvimrc.after
 		ackrc
 		gitconfig
     bash-git-prompt
+    git-completion.sh
     janus
     gitignore)
 
