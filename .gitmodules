@@ -13,3 +13,6 @@
 [submodule "bash-git-prompt"]
 	path = bash-git-prompt
 	url = https://github.com/magicmonty/bash-git-prompt.git
+[submodule "janus/splitjoin"]
+	path = janus/splitjoin
+	url = https://github.com/AndrewRadev/splitjoin.vim.git
