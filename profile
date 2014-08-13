@@ -23,6 +23,7 @@ alias gco='git checkout'
 alias gd='git diff'
 alias gl='git l'
 alias gs='git status'
+alias gp='git pull'
 alias gpp='git pull && git push'
 
 test -r /sw/bin/init.sh && . /sw/bin/init.sh
@@ -66,4 +67,5 @@ function new_mac {
 PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
 
 source ~/.bash-git-prompt/gitprompt.sh #add gitprompt
+source ~/.git-completion.sh
 FILE=~/.profile.local ; [ -f $FILE ] && . $FILE
