@@ -16,3 +16,6 @@
 [submodule "janus/splitjoin"]
 	path = janus/splitjoin
 	url = https://github.com/AndrewRadev/splitjoin.vim.git
+[submodule "janus/vim-easy-align"]
+	path = janus/vim-easy-align
+	url = https://github.com/junegunn/vim-easy-align.git
