@@ -23,7 +23,7 @@ alias gco='git checkout'
 alias gd='git diff'
 alias gl='git l'
 alias gs='git status'
-alias gp='git pull'
+alias gp='git push'
 alias gpp='git pull && git push'
 
 test -r /sw/bin/init.sh && . /sw/bin/init.sh
