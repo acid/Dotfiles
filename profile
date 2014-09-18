@@ -12,7 +12,8 @@ alias ss='script/server'
 alias sc='script/console'
 alias sge="script/generate"
 alias be="bundle exec"
-alias brs="bundle exec rspec --format documentation"
+alias brs="bundle exec rspec"
+alias brse="bundle exec rspec --format documentation"
 
 # git
 alias ga="git add"
