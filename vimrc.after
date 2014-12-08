@@ -23,7 +23,7 @@ let mapleader = "\\"
 map <Leader>h :set invhls <CR>
 
 " ignore for Ctrl-T
-set wildignore+=vendor/plugins/*,public/*,tmp/*
+set wildignore+=vendor/plugins/*,public/*,tmp/*,log/*
 
 " fugitive shortcuts
 map <Leader>gs :Gstatus <CR>
