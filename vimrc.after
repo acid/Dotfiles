@@ -7,6 +7,10 @@ set showcmd
 set foldlevelstart=1
 set background=dark
 
+:set wrap
+:set linebreak
+:set nolist
+
 " Display extra whitespace
 set list listchars=tab:»·,trail:·
 
