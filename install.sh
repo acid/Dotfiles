@@ -20,6 +20,7 @@ local_confs.each do |f|
   to_link.store path + f, homedir + "/." + f
 end
 to_link["#{path}com.googlecode.iterm2.plist"] = "#{homedir}/Library/Preferences/com.googlecode.iterm2.plist"
+to_link["#{path}fish"] = "#{homedir}/.config/fish"
 
 to_link.each do |source,target|
   if File.symlink? target
