@@ -10,13 +10,14 @@ set background=dark
 :set wrap
 :set linebreak
 :set nolist
+:set textwidth=0
+:set wrapmargin=0
 
 " Display extra whitespace
 set list listchars=tab:»·,trail:·
 
 " Color scheme
-"colorscheme relaxedgreen
-colorscheme solarized
+colorscheme molokai
 "highlight NonText guibg=#060606
 "highlight Folded  guibg=#0A0A0A guifg=#9090D0
 
@@ -70,3 +71,6 @@ let g:ctrlp_max_files = 2300000
 "ack tweaks
 call janus#add_mapping('ack', 'map', '<D-F>', ':Ack!<space>')
 let g:ack_autoclose = 1
+
+:inoremap nr <Esc>
+:inoremap <esc> <nop>

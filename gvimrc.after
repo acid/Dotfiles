@@ -1,6 +1,9 @@
-"colorscheme relaxedgreen
-colorscheme solarized
+colorscheme molokai
 set guifont=Inconsolata:h15
 set transp=23
 set background=dark
-
+:set wrap
+:set linebreak
+:set nolist
+:set textwidth=0
+:set wrapmargin=0
